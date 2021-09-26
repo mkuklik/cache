@@ -29,7 +29,7 @@ func TestLRUCache(t *testing.T) {
 		t.Errorf("can't find key1 in cache")
 	}
 
-	if lru.Has(key1) {
+	if !lru.Has(key1) {
 		t.Errorf("can't find key1 in cache")
 	}
 
